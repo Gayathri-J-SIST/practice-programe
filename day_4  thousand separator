@@ -1,0 +1,11 @@
+j=int(input())
+j=str(j)
+j=j[::-1]
+def form_num(j):
+    k=""
+    for i in range(0,len(j),3):
+        if i+3<len(j):
+            k+=j[i:i+3]+","
+        else:k+=j[i:]    
+    print('"',k[::-1],'"',sep="")
+form_num(j)    
