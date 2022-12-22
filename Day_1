@@ -1,0 +1,8 @@
+j=list(map(int,input().split()))
+k=int(input())
+for i in j:
+    for g in j:
+        c=i+g 
+    if c==k:
+        print('True')
+
